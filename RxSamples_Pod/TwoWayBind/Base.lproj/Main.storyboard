@@ -56,6 +56,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Yjp-eS-1mk" kind="show" id="kQB-Wj-aP8"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cWC-R2-Q1o">
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
@@ -243,6 +246,74 @@
             </objects>
             <point key="canvasLocation" x="2080.8000000000002" y="490.70464767616198"/>
         </scene>
+        <!--选择支付方式-->
+        <scene sceneID="7jv-B6-xKu">
+            <objects>
+                <viewController id="Yjp-eS-1mk" customClass="SelectPaymentViewController" customModule="TwoWayBind" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="em7-nt-oHe"/>
+                        <viewControllerLayoutGuide type="bottom" id="iMO-dD-WWn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rMa-9I-3kt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2bH-d0-12q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PaymentTableViewCellID" id="A3u-D8-fxC" customClass="PaymentTableViewCell" customModule="TwoWayBind" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A3u-D8-fxC" id="E4J-4k-yka">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="purchase_icon_alipay" translatesAutoresizingMaskIntoConstraints="NO" id="0ZW-Uy-rYX">
+                                                    <rect key="frame" x="25" y="11" width="30" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="支付宝支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPk-sb-CJL">
+                                                    <rect key="frame" x="63" y="13" width="75" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbM-hA-brM">
+                                                    <rect key="frame" x="329" y="11" width="17" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="ic_select"/>
+                                                    <state key="selected" image="ic_selected"/>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImageView" destination="0ZW-Uy-rYX" id="zpX-Re-bJQ"/>
+                                            <outlet property="nameLabel" destination="FPk-sb-CJL" id="DFy-7T-bEg"/>
+                                            <outlet property="selectButton" destination="wbM-hA-brM" id="m51-Ds-Cif"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2bH-d0-12q" firstAttribute="leading" secondItem="rMa-9I-3kt" secondAttribute="leading" id="5b1-Cr-Ycf"/>
+                            <constraint firstAttribute="trailing" secondItem="2bH-d0-12q" secondAttribute="trailing" id="DtU-wh-Lnj"/>
+                            <constraint firstItem="iMO-dD-WWn" firstAttribute="top" secondItem="2bH-d0-12q" secondAttribute="bottom" id="Oqz-0d-vh1"/>
+                            <constraint firstItem="2bH-d0-12q" firstAttribute="top" secondItem="rMa-9I-3kt" secondAttribute="top" id="znp-Qu-lGO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="选择支付方式" id="LZ1-Fx-EQr"/>
+                    <connections>
+                        <outlet property="tableView" destination="2bH-d0-12q" id="TmW-jH-Yfj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yD6-aY-FaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2080.8000000000002" y="1142.8785607196403"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="rUV-p9-dxS">
             <objects>
@@ -266,5 +337,8 @@
         <image name="btn_minus_normal" width="24" height="24"/>
         <image name="btn_plus_normal" width="24" height="24"/>
         <image name="ic_right" width="13" height="17"/>
+        <image name="ic_select" width="17" height="14"/>
+        <image name="ic_selected" width="17" height="14"/>
+        <image name="purchase_icon_alipay" width="24" height="24"/>
     </resources>
 </document>

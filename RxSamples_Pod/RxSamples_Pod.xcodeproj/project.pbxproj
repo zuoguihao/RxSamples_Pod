@@ -11,13 +11,14 @@
 		3142A5251F579F07002CC6F6 /* ProductInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142A5241F579F07002CC6F6 /* ProductInfoModel.swift */; };
 		3142A52F1F57D357002CC6F6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142A52E1F57D357002CC6F6 /* UIColor+Extension.swift */; };
 		3142A5311F57E026002CC6F6 /* SelectPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142A5301F57E026002CC6F6 /* SelectPaymentViewController.swift */; };
+		31B29D611F57ED71003A4387 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B29D601F57ED71003A4387 /* PaymentTableViewCell.swift */; };
+		31B29D631F57ED82003A4387 /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B29D621F57ED82003A4387 /* PaymentModel.swift */; };
 		31F8ED5B1F56B6FF00374E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F8ED5A1F56B6FF00374E41 /* AppDelegate.swift */; };
 		31F8ED5D1F56B6FF00374E41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F8ED5C1F56B6FF00374E41 /* ViewController.swift */; };
 		31F8ED601F56B6FF00374E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F8ED5E1F56B6FF00374E41 /* Main.storyboard */; };
 		31F8ED621F56B6FF00374E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F8ED611F56B6FF00374E41 /* Assets.xcassets */; };
 		31F8ED651F56B6FF00374E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F8ED631F56B6FF00374E41 /* LaunchScreen.storyboard */; };
 		31F8ED731F56B74600374E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F8ED721F56B74600374E41 /* AppDelegate.swift */; };
-		31F8ED751F56B74600374E41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F8ED741F56B74600374E41 /* ViewController.swift */; };
 		31F8ED781F56B74600374E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F8ED761F56B74600374E41 /* Main.storyboard */; };
 		31F8ED7A1F56B74600374E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F8ED791F56B74600374E41 /* Assets.xcassets */; };
 		31F8ED7D1F56B74600374E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F8ED7B1F56B74600374E41 /* LaunchScreen.storyboard */; };
@@ -63,6 +64,8 @@
 		3142A5261F57A273002CC6F6 /* TwoWayBind-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwoWayBind-Bridging-Header.h"; sourceTree = "<group>"; };
 		3142A52E1F57D357002CC6F6 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		3142A5301F57E026002CC6F6 /* SelectPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPaymentViewController.swift; sourceTree = "<group>"; };
+		31B29D601F57ED71003A4387 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
+		31B29D621F57ED82003A4387 /* PaymentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
 		31F8ED571F56B6FF00374E41 /* RxSamples_Pod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSamples_Pod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F8ED5A1F56B6FF00374E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31F8ED5C1F56B6FF00374E41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +75,6 @@
 		31F8ED661F56B6FF00374E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31F8ED701F56B74600374E41 /* TwoWayBind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoWayBind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F8ED721F56B74600374E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		31F8ED741F56B74600374E41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31F8ED771F56B74600374E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31F8ED791F56B74600374E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31F8ED7C1F56B74600374E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -208,7 +210,6 @@
 				3142A52A1F57D33E002CC6F6 /* Expand */,
 				31F8ED821F56B7AE00374E41 /* RxExtensions */,
 				31F8ED721F56B74600374E41 /* AppDelegate.swift */,
-				31F8ED741F56B74600374E41 /* ViewController.swift */,
 				31F8ED761F56B74600374E41 /* Main.storyboard */,
 				31F8EDCB1F56B90C00374E41 /* ShipmentDeal */,
 				31F8EDC91F56B87700374E41 /* PushSetting */,
@@ -289,6 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				3142A5301F57E026002CC6F6 /* SelectPaymentViewController.swift */,
+				31B29D601F57ED71003A4387 /* PaymentTableViewCell.swift */,
+				31B29D621F57ED82003A4387 /* PaymentModel.swift */,
 			);
 			path = SelectPayment;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				3142A52F1F57D357002CC6F6 /* UIColor+Extension.swift in Sources */,
 				31F8EDC61F56B7AE00374E41 /* UITableViewHeaderFooterView+Rx.swift in Sources */,
 				31F8EDBB1F56B7AE00374E41 /* Driver+Occupiable.swift in Sources */,
+				31B29D631F57ED82003A4387 /* PaymentModel.swift in Sources */,
 				31F8EDBE1F56B7AE00374E41 /* Observable+Optional.swift in Sources */,
 				31F8EDB91F56B7AE00374E41 /* Replace.swift in Sources */,
 				31F8EDB31F56B7AE00374E41 /* ReactiveButton.swift in Sources */,
@@ -517,10 +521,10 @@
 				31F8EDAB1F56B7AE00374E41 /* DataSourceExtensions.swift in Sources */,
 				31F8EDAD1F56B7AE00374E41 /* Ignore.swift in Sources */,
 				31F8EDB61F56B7AE00374E41 /* ReactiveLabel.swift in Sources */,
-				31F8ED751F56B74600374E41 /* ViewController.swift in Sources */,
 				31F8EDB21F56B7AE00374E41 /* ReactiveBarButtonItem.swift in Sources */,
 				31F8EDCF1F56BBF600374E41 /* ProductTableViewCell.swift in Sources */,
 				31F8EDC71F56B7AE00374E41 /* Variable+Array.swift in Sources */,
+				31B29D611F57ED71003A4387 /* PaymentTableViewCell.swift in Sources */,
 				31F8EDCD1F56B92300374E41 /* ShipmentDealViewController.swift in Sources */,
 				31F8EDBF1F56B7AE00374E41 /* Occupiable.swift in Sources */,
 				31F8EDBD1F56B7AE00374E41 /* Observable+Occupiable.swift in Sources */,
