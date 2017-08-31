@@ -1,0 +1,21 @@
+platform :ios, '8.0'
+use_frameworks!
+
+targetTetsArray = ['TwoWayBind']
+
+targetTetsArray.each do |t|
+    target t do
+        pod 'RxSwift'
+        pod 'RxCocoa'
+        #pod 'R.swift'
+        pod 'SwiftyJSON'
+        #pod 'RxExtensions'
+        pod 'RxDataSources'
+        pod 'RxAutomaton'
+        pod 'Alamofire'
+        pod 'MBProgressHUD'
+        pod 'SnapKit'
+        pod 'RandomKit'
+        pod "QBImagePickerController"
+    end
+end

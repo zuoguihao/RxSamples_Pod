@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (4.5.0)
+  - MBProgressHUD (1.0.0)
+  - QBImagePickerController (3.4.0)
+  - RandomKit (5.1.0):
+    - ShiftOperations (~> 1.0.2)
+    - Threadly (~> 1.0)
+  - RxAutomaton (0.2.1):
+    - RxSwift (~> 3.0)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxDataSources (1.0.4):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxSwift (3.6.1)
+  - ShiftOperations (1.0.2)
+  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
+  - Threadly (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - MBProgressHUD
+  - QBImagePickerController
+  - RandomKit
+  - RxAutomaton
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - SnapKit
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  RandomKit: 300a73d10e84efcd5efd450a7c56ceeec7d27dbb
+  RxAutomaton: 7ecff5486e47d9fbbb8cc1ceaea8c58732dabc50
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxDataSources: b3389acc5fe2eefb8fcd81a2b76a876ad08bc82a
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  ShiftOperations: 702c9aa98d3b20d98dceb71dd8437b562f7ab3ad
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Threadly: b772ed7c1ff4a3f03eb4600bbc5ef83b3be5cb29
+
+PODFILE CHECKSUM: 0c3921b14b9d2ca3181b8f7fd970a1ea3bdb8c8e
+
+COCOAPODS: 1.2.1
